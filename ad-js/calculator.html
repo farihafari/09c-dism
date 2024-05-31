@@ -34,41 +34,41 @@
                     
                             <tr class="" >
                                 <td scope="row" colspan="4">
-                                    <input type="text" class="form-control" name="" id="">
+                                    <input type="text" class="form-control" name="" id="inp">
                                 </td>
                                 
                             </tr>
                             <tr class="">
                                 <td scope="row">
-                                    <button class="btn btn-outline-secondary">1</button>
+                                    <button class="btn btn-outline-secondary" onclick="oprands(1)">1</button>
                                 </td>
-                                <td>  <button class="btn btn-outline-secondary">2</button></td>
-                                <td>  <button class="btn btn-outline-secondary">3</button></td>
-                                <td>  <button class="btn btn-outline-secondary">4</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(2)">2</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(3)">3</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(4)">4</button></td>
                             </tr>
                             <tr class="">
                                 <td scope="row">
-                                    <button class="btn btn-outline-secondary">5</button>
+                                    <button class="btn btn-outline-secondary" onclick="oprands(5)">5</button>
                                 </td>
-                                <td>  <button class="btn btn-outline-secondary">6</button></td>
-                                <td>  <button class="btn btn-outline-secondary">7</button></td>
-                                <td>  <button class="btn btn-outline-secondary">8</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(6)">6</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(7)">7</button></td>
+                                <td>  <button class="btn btn-outline-secondary"onclick="oprands(8)">8</button></td>
                             </tr>
                             <tr class="">
                                 <td scope="row">
-                                    <button class="btn btn-outline-secondary">9</button>
+                                    <button class="btn btn-outline-secondary" onclick="oprands(9)">9</button>
                                 </td>
-                                <td>  <button class="btn btn-outline-secondary">0</button></td>
-                                <td>  <button class="btn btn-outline-secondary">+</button></td>
-                                <td>  <button class="btn btn-outline-secondary">-</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="oprands(0)">0</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="operator('+')">+</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="operator('-')">-</button></td>
                             </tr>
                             <tr class="">
                                 <td scope="row">
-                                    <button class="btn btn-outline-secondary">*</button>
+                                    <button class="btn btn-outline-secondary" onclick="operator('*')">*</button>
                                 </td>
-                                <td>  <button class="btn btn-outline-secondary">/</button></td>
-                                <td>  <button class="btn btn-outline-secondary">=</button></td>
-                                <td>  <button class="btn btn-outline-secondary">cc</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="operator('/')">/</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="calculation()">=</button></td>
+                                <td>  <button class="btn btn-outline-secondary" onclick="clearAll()">cc</button></td>
                             </tr>
                     </table>
                 </div>
@@ -76,5 +76,6 @@
             </div>
         </div>
       </div>
+      <script src="assets/js/calculator.js"></script>
     </body>
 </html>
